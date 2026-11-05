@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="572" viewBox="0 0 900 572" role="img" aria-label="Sentinel AI — demo">
+  <style>
+    text{font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;font-size:15px}
+    .l{opacity:0}
+    .ty{clip-path:inset(0 100% 0 0)}
+    .cur{animation:blink 1s steps(1) infinite}
+    @keyframes show{to{opacity:1}}
+    @keyframes type{to{clip-path:inset(0 0 0 0)}}
+    @keyframes blink{50%{opacity:0}}
+    @media (prefers-reduced-motion:reduce){.l{opacity:1;animation:none!important}.ty{clip-path:none;animation:none!important}}
+  </style>
+  <rect width="900" height="572" rx="14" fill="#0d1117"/>
+  <rect x=".5" y=".5" width="899" height="572" rx="14" fill="none" stroke="#30363d"/>
+  <rect width="900" height="40" rx="14" fill="#161b22"/><rect y="26" width="900" height="14" fill="#161b22"/>
+  <circle cx="24" cy="20" r="6" fill="#ff5f57"/><circle cx="44" cy="20" r="6" fill="#febc2e"/><circle cx="64" cy="20" r="6" fill="#28c840"/>
+  <text x="450" y="25" text-anchor="middle" fill="#8b949e" style="font-size:13px">Sentinel AI — demo</text>
+<text x="28" y="74" class="l" style="animation:show .01s 0.60s forwards"><tspan fill="#22c55e">❯</tspan></text><text x="50" y="74" class="l ty" style="animation:show .01s 0.60s forwards,type 1.80s steps(40) 0.60s forwards" fill="#e5e7eb">composer require sentinel-ai/sentinel-ai</text>
+<text x="50" y="100" class="l" style="animation:show .01s 2.70s forwards" fill="#94a3b8">Using version ^1.0</text>
+<text x="50" y="126" class="l" style="animation:show .01s 2.92s forwards" fill="#94a3b8">Generating autoload files</text>
+<text x="50" y="152" class="l" style="animation:show .01s 3.14s forwards" fill="#94a3b8">Sentinel AI CLI installed successfully</text>
+<text x="28" y="204" class="l" style="animation:show .01s 3.71s forwards"><tspan fill="#22c55e">❯</tspan></text><text x="50" y="204" class="l ty" style="animation:show .01s 3.71s forwards,type 1.08s steps(24) 3.71s forwards" fill="#e5e7eb">vendor/bin/sentinel init</text>
+<text x="50" y="230" class="l" style="animation:show .01s 5.09s forwards" fill="#94a3b8">Created sentinel.json with default OpenAI configuration.</text>
+<text x="50" y="256" class="l" style="animation:show .01s 5.31s forwards" fill="#94a3b8">Please add your OPENAI_API_KEY and run audits.</text>
+<text x="28" y="308" class="l" style="animation:show .01s 5.88s forwards"><tspan fill="#22c55e">❯</tspan></text><text x="50" y="308" class="l ty" style="animation:show .01s 5.88s forwards,type 2.20s steps(73) 5.88s forwards" fill="#e5e7eb">vendor/bin/sentinel audit --target=tests/fixtures/test.apk --type=android</text>
+<text x="50" y="334" class="l" style="animation:show .01s 8.38s forwards" fill="#94a3b8">Decompiling APK with Apktool...</text>
+<text x="50" y="360" class="l" style="animation:show .01s 8.60s forwards" fill="#94a3b8">Analyzing AndroidManifest.xml and 142 Smali files...</text>
+<text x="50" y="386" class="l" style="animation:show .01s 8.82s forwards" fill="#94a3b8">LLM evaluation complete. 2 high, 3 medium findings.</text>
+<text x="50" y="412" class="l" style="animation:show .01s 9.04s forwards" fill="#94a3b8">HTML report written to ./reports/audit-2025-01-18.html</text>
+<text x="28" y="464" class="l" style="animation:show .01s 9.61s forwards"><tspan fill="#22c55e">❯</tspan></text><text x="50" y="464" class="l ty" style="animation:show .01s 9.61s forwards,type 2.20s steps(78) 9.61s forwards" fill="#e5e7eb">vendor/bin/sentinel audit --target=https://demo.local --type=web --interactive</text>
+<text x="50" y="490" class="l" style="animation:show .01s 12.11s forwards" fill="#94a3b8">Starting web crawl...</text>
+<text x="50" y="516" class="l" style="animation:show .01s 12.33s forwards" fill="#94a3b8">Agent: Found missing CSP header and potential reflected XSS.</text>
+<g class="l" style="animation:show .01s 12.55s forwards"><text x="28" y="542" fill="#22c55e">❯</text><rect class="cur" x="50" y="527" width="10" height="18" fill="#e5e7eb"/></g>
+</svg>

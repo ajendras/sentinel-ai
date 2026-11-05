@@ -1,0 +1,40 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+/**
+ * Sentinel AI - Autonomous Security Auditor
+ *
+ * CLI entrypoint that bootstraps the Application and runs Symfony Console.
+ */
+
+if (PHP_SAPI !== 'cli') {
+    fwrite(STDERR, "This script must be executed from the command line.\n");
+    exit(1);
+}
+
+$possibleAutoloaders = [
+    __DIR__ . '/../vendor/autoload.php',
+    __DIR__ . '/../../../autoload.php',
+];
+
+$autoloader = null;
+foreach ($possibleAutoloaders as $path) {
+    if (file_exists($path)) {
+        $autoloader = $path;
+        break;
+    }
+}
+
+if ($autoloader === null) {
+    fwrite(STDERR, "Autoloader not found. Please run 'composer install' first.\n");
+    exit(1);
+}
+
+require $autoloader;
+
+use Sentinel\Application;
+
+$application = new Application();
+$application->run();

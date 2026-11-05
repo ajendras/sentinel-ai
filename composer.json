@@ -1,0 +1,44 @@
+{
+    "name": "sentinel-ai/sentinel-ai",
+    "description": "Autonomous PHP agents that combine Apktool decompilation with LLM reasoning to audit Android and web app security",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["security", "audit", "android", "apktool", "llm", "owasp", "vulnerability", "agent"],
+    "authors": [
+        {
+            "name": "Sentinel AI Contributors",
+            "homepage": "https://github.com/sentinel-ai"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "symfony/console": "^7.1",
+        "guzzlehttp/guzzle": "^7.8",
+        "openai-php/client": "^0.10.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sentinel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sentinel\\Tests\\": "tests/"
+        }
+    },
+    "bin": [
+        "bin/sentinel"
+    ],
+    "scripts": {
+        "test": "phpunit",
+        "audit": "php bin/sentinel audit"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": true
+    },
+    "minimum-stability": "stable"
+}
